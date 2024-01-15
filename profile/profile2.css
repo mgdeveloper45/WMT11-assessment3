@@ -1,0 +1,227 @@
+/* assign header bg color blue */
+header {
+    background-color: #F6E8E3;
+    padding-bottom: 40px;
+    border-bottom: 3px solid #E1A14E; 
+}
+/* font & styling for main heading */
+header h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 48px; 
+    /* color: #E1A14E; */
+    margin: 0;
+    text-align: center;
+    padding-top: 40px;
+}
+/* show flex in navigation */
+.group-header {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.heading {
+    flex: 1;
+    padding-left: 0;
+    justify-content: center;
+
+}
+
+/* flex & styling ul */
+.navi ul {
+    display: flex;
+    padding-left: 0;
+    justify-content: center;
+    list-style: none;
+    border-bottom: 100px;
+}
+
+/* styling list items & setting margins */
+.navi ul li a {
+    /* color: #E1A14E; */
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 20px 0 0;
+}
+
+/* remove right margin from last list item */
+.navi ul li:last-child a {
+    margin-right: 0;
+}
+
+/* display flex for intro section */
+.greetings {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.portfolio {
+    flex: 1;
+    margin: 20px;
+}
+
+/* body bg color */
+main {
+    background-color: #ddd;
+    text-align: center;
+}
+
+/* h2 styling */
+h2 {
+    font-weight: 600;
+    font-size: 30px;
+    /* color: #E1A14E; */
+}
+
+/* section bg color */
+.portfolio {
+    background-color: #E1A14E;
+    border-radius: 15px;
+    padding: 20px;
+    opacity: 0.95;
+    box-shadow: 3px 6px 10px rgb(8, 24, 38);
+}
+
+.name {
+    font-weight: 400;
+    padding-top: 15px;
+    letter-spacing: 3px;
+}
+
+.opeq {
+    background-color: #F6E8E3;
+    /* color: #E1A14E; */
+    padding: 20px;
+    border-radius: 15px;
+}
+
+/* portfolio image styling */
+.img {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8hBAk7zh8-1PzKm6x5l8c5wmWQt7qJVAeig&usqp=CAU");
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    border-top: 1px solid #E1A14E;
+    background-size: cover;
+    height: 250px;
+    width: 380px;
+    margin: 40px auto;
+    opacity: 0.95;
+    box-shadow: 3px 6px 10px rgb(8, 24, 38);
+}
+/* footer styling */
+.footer {
+    margin-top: 100px;
+}
+/* favorite styling */
+.favorite-section {
+    background-color: #E1A14E;
+    width: 60vw;
+    height: 20vh;
+    margin: 30px auto;
+    border-radius: 15px;
+    opacity: 0.95;
+    box-shadow: 3px 6px 10px rgb(8, 24, 38);
+}
+.my-favorites {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+}
+.favs {
+    margin-top: 20px;
+    background-color: #F6E8E3;
+    width: 320px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 15px;
+}
+.favorites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.fav-btn {
+    margin-top: 7px;
+    width: 160px;
+    border: 2px solid #E1A14E;
+    border-radius: 5px;
+}
+
+/* form styling */
+.form-container {
+    background-color: #E1A14E;
+    padding-top: 10px;
+}
+
+.form {
+    background-color: #F6E8E3;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    opacity: 0.95;
+    box-shadow: 3px 6px 10px rgb(8, 24, 38);
+}
+
+textarea, input {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid #E1A14E;
+}
+
+button {
+    margin-bottom: 5px;
+    border-radius: 5px;
+    border: 2px solid #E1A14E;
+}
+
+/* form flex */ 
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form {
+    flex: 3;
+}
+/* apply rules browser greater than 800 pixels */
+@media all and (min-width: 800px) {
+    body {
+        background-color: #ddd;
+    }
+
+    .group-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+   .heading {
+        justify-content: space-between;
+        
+       
+   }
+    header h1 {
+        font-size: 52px;
+        margin: 0 0 10px 0;
+        padding-top: 15px;
+    }
+    .navi ul {
+        justify-content: flex-end;
+        margin-top: 0;
+    }
+    .navi ul li a:hover {
+        color: #ddd;
+      }
+    .navi ul li a:active {
+        color: #a9a9a9;;
+      }
+
+    .greetings {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
