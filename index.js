@@ -1,7 +1,6 @@
 console.log("hello world");
 
 
-
 function handleSubmit(evt) {
 	evt.preventDefault();
 	alert("The form has been submitted succesfully")
@@ -15,3 +14,4 @@ function mouseOver() {
 }
 let image = document.querySelector('#security-image')
 image.addEventListener('mouseover',mouseOver)
+
